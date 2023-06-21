@@ -24,17 +24,16 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>Jing Feng Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">jing feng</h1>
+            <h1 className="text-xl font-burtons dark:text-teal-50">cheah jing feng</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" />
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-teal-50" />
               </li>
               <li>
                 <a
@@ -47,13 +46,13 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
-              Cheah Jing Feng
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400">
+              Portfolio
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl">
-              Computer Science graduate and Developer
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-teal-50">
+              Computer Science graduate
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-300">
               Graduated from NTU with a Bachelor of Engineering in Computer
               Science.
             </p>
@@ -70,14 +69,14 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <h3 className="text-3xl py-1 dark:text-teal-50">Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Lorem Ipsum <span className="text-teal-500">lorem ipsum</span>
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800">Lorem Ipsum</p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Lorem Ipsum</p>
           </div>
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+          <div className="flex flex-col lg:flex-row gap-7">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/3 flex-1 dark:bg-gray-200">
               <Image
                 src={design}
                 width={100}
@@ -94,7 +93,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Figma</p>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/3 flex-1 dark:bg-gray-200">
               <Image
                 src={code}
                 width={100}
@@ -111,7 +110,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Figma</p>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/3 flex-1 dark:bg-gray-200">
               <Image
                 src={consulting}
                 width={100}
@@ -132,14 +131,14 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <h3 className="text-3xl py-1 dark:text-teal-50">Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Lorem Ipsum <span className="text-teal-500">lorem ipsum</span>
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800">Lorem Ipsum</p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Lorem Ipsum</p>
           </div>
 
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="flex flex-col gap-7 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <Image src={web1} className="rounded-lg object-cover" width={"100%"} height={"100%"} responsive/>
             </div>
